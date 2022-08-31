@@ -1,0 +1,15 @@
+// whatsapp
+.bg-ws1 {
+  background-color: #4caf50;
+  &:hover {
+    background-color: #4caf50;
+  }
+}
+.logo-ws {
+  width: 4rem;
+}
+.logo-ws-position {
+  left: auto;
+  // right: auto;
+  bottom: 10px;
+}

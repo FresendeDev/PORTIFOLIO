@@ -1,11 +1,31 @@
 // @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap");
 @import "~bootstrap/scss/bootstrap";
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+// @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 // @import "fonts";
 // @import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
 
 * {
-  --color-gold: #b18746;
-  --color-vinho: #400809;
+  /* equivalente a 10px --- 1.6rem equivalente a 16px */
+  font-size: 62.5%;
+  --verde: rgba(0, 116, 124, 1);
+  --verde-claro: rgba(0, 186, 200, 1);
+  --cinza1: rgba(202, 202, 202, 1);
+  --cinza2: rgba(135, 135, 135, 1);
+  --cinza3: rgba(31, 31, 33, 1);
+  --bg: #faf5ef;
 }
+
+body {
+  background-color: #faf5ef;
+  font-family: satoshi, sans-serif;
+  /* overflow: hidden; */
+  color: var(--cinza3);
+  min-width: 220px;
+}
+header {
+  height: 124px;
+}
+
+// @import "btn_whats";
+@import "nav";
