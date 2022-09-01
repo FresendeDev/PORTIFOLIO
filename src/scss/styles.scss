@@ -23,9 +23,27 @@ body {
   color: var(--cinza3);
   min-width: 220px;
 }
-header {
-  height: 124px;
+// header {
+//   height: 124px;
+// }
+
+.test {
+  //   background-color: aquamarine;
+}
+.test2 {
+  background-color: aquamarine;
+  height: 100px;
+}
+
+.bg-defaut {
+  background-color: var(--bg);
+}
+
+.p-defaut {
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 // @import "btn_whats";
 @import "nav";
+@import "satoshi";
