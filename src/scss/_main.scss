@@ -70,7 +70,7 @@ h1 {
 }
 
 .bg-img-1 {
-  background-image: url("../assets/images/500px.png");
+  background-image: url("../assets/images/far4.png");
   background-color: var(--verde);
   background-size: contain;
   background-repeat: no-repeat;
@@ -83,13 +83,15 @@ h1 {
 }
 
 .bg-img-2 {
-  // background-image: url("../assets/images/dod1.png");
+  background-image: url("../assets/images/bg-img-2.png");
   // background-color: var(--verde);
-  background-size: contain;
+  // background-size: contain;
   background-repeat: no-repeat;
   background-size: auto 470px;
-
+  background-position: right;
+  // background-position-x: -240px;
   @media (min-width: 992px) {
+    background-image: none;
     background-size: auto 805px;
     height: 805px;
   }
