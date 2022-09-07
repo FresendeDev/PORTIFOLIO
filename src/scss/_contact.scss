@@ -1,0 +1,73 @@
+// contato
+.grid-cont {
+  grid-area: grid-cont;
+  h1 {
+    text-transform: none;
+  }
+  .contato-l {
+    float: left;
+    width: 100%;
+    @media (min-width: 992px) {
+      width: 60%;
+      padding-right: 44px;
+    }
+  }
+  .contato-r {
+    float: left;
+    width: 100%;
+    @media (min-width: 992px) {
+      float: right;
+      width: 40%;
+    }
+  }
+}
+.fig-resp-l {
+  display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    margin-top: 16px;
+    float: left;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 0 0 50px 0;
+    border: solid 1px;
+    border-color: var(--verde-claro);
+  }
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+.fig-resp-r {
+  display: none;
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     margin-top: 16px;
+  //     float: left;
+  //     object-fit: cover;
+  //     object-position: 0px 0px;
+  //     border-radius: 0 0 50px 0;
+  //     border: solid 1px;
+  //     border-color: var(--verde-claro);
+  //   }
+
+  img {
+    width: 77%;
+    height: 566px;
+    margin-top: 115px;
+    float: right;
+    object-fit: cover;
+    object-position: -202px 0px;
+    border-radius: 0 50px 0 0px;
+    border: solid 1px;
+    border-color: var(--verde-claro);
+    margin-top: 60px;
+  }
+  @media (min-width: 992px) {
+    display: block;
+  }
+}
+#coment {
+  height: 100px;
+}

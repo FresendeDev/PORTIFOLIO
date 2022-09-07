@@ -4,7 +4,7 @@ import "./scss/styles.scss";
 
 //carrego todo o bootstrap
 import "bootstrap";
-// import "./js/form";
+import "./js/form";
 // import "./js/tags"
 
 //Carrega só o css

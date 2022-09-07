@@ -1,0 +1,199 @@
+// section main
+.container-grid {
+  display: grid;
+  grid-template:
+    "grid-l"
+    "grid-r"
+    "grid-abord"
+    "grid-perso"
+    "grid-porti"
+    "grid-hab"
+    "grid-cont";
+  grid-template-columns: 1fr;
+  //   grid-template-rows: 1fr 1fr 1fr;
+  //   gap: 10px;
+  @media (min-width: 992px) {
+    grid-template:
+      "grid-l grid-r"
+      "grid-abord grid-abord"
+      "grid-perso grid-perso"
+      "grid-porti grid-porti"
+      "grid-hab grid-hab"
+      "grid-cont grid-cont";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-size: 42px;
+  line-height: 42px;
+  @media (min-width: 992px) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+// left ************
+.w-flex-l {
+  height: 470px;
+  @media (min-width: 992px) {
+    height: 805px;
+  }
+}
+.grid-l {
+  grid-area: grid-l;
+  color: var(--bg);
+}
+// developer
+.t-h2-l {
+  padding-left: 2px;
+  @media (min-width: 992px) {
+    padding-left: 4px;
+    // height: auto;
+  }
+}
+
+// rigth ************
+.w-flex-r {
+  height: 470px;
+  @media (min-width: 992px) {
+    height: 805px;
+    // height: auto;
+  }
+}
+.grid-r {
+  grid-area: grid-r;
+}
+
+.bg-img-1 {
+  background-image: url("../assets/images/500px.png");
+  background-color: var(--verde);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: auto 470px;
+
+  @media (min-width: 992px) {
+    background-size: auto 805px;
+    height: 805px;
+  }
+}
+
+.bg-img-2 {
+  // background-image: url("../assets/images/dod1.png");
+  // background-color: var(--verde);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: auto 470px;
+
+  @media (min-width: 992px) {
+    background-size: auto 805px;
+    height: 805px;
+  }
+}
+
+// abordagem e perso
+.grid-abord {
+  grid-area: grid-abord;
+
+  p {
+    padding-left: 22px;
+    // padding-right: 22px;
+    // padding-right: calc(100vw / 5 + 5px);
+    @media (min-width: 992px) {
+      // lateral estilizada
+      // padding-right: calc(100vw / 4 + 5px);
+    }
+  }
+}
+
+// barra lateral VERDE h3
+.barra-lateral h3::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 34px;
+  margin-right: 6px;
+  background: var(--verde);
+  @media (min-width: 992px) {
+    height: 53px;
+  }
+}
+
+// barra lateral VERDE CLARO h3
+.barra-lateral-vc h3::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 34px;
+  margin-right: 6px;
+  background: var(--verde-claro);
+  &__bg {
+    background: var(--bg);
+  }
+  @media (min-width: 992px) {
+    height: 53px;
+  }
+}
+
+// .bg-img-abort {
+// background-image: url("../assets/images/abort-lateral-dir.png");
+// background-size: contain;
+// background-repeat: no-repeat;
+
+// background-size: calc(100vw / 5) 100%;
+// background-position-x: right;
+
+// @media (min-width: 992px) {
+// background-size: calc(100vw / 4) 100%;
+// }
+// }
+
+//  exclusivo
+.grid-perso {
+  grid-area: grid-perso;
+
+  p {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+.ps-22 {
+  padding-left: 22px;
+}
+
+.border-destak {
+  border: solid 1px var(--bg);
+  height: 220px;
+  width: 80%;
+  margin-left: -2px;
+  border-radius: 0 0 50px 0;
+  margin-top: 6rem;
+  @media (min-width: 992px) {
+    margin-top: 8rem;
+    height: 240px;
+    width: 75%;
+  }
+}
+// habilidade
+.grid-hab {
+  grid-area: grid-hab;
+}
+// portifolnio grid-porti
+.grid-porti {
+  grid-area: grid-porti;
+}
+
+// ajusta h1
+.grid-area,
+.grid-abord,
+.grid-hab,
+.grid-porti,
+.grid-perso {
+  h1 {
+    text-transform: none;
+  }
+}

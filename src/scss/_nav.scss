@@ -1,43 +1,61 @@
 .navbar-brand {
-  font-size: 2.8rem;
+  font-size: 28px;
   color: var(--verde);
+  &:hover,
+  &:focus {
+    color: var(--verde);
+  }
   @media (max-width: 992px) {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
-.navbar-brand:hover,
-.navbar-brand:focus {
-  color: var(--verde);
-}
+// .navbar-brand:hover,
+// .navbar-brand:focus {
+//   color: var(--verde);
+// }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 20px;
+  padding-left: 3px;
 
-  @media (max-width: 992px) {
-    padding-left: 3px;
+  &__border {
     border-bottom: solid 1px var(--cinza1);
+    @media (min-width: 992px) {
+      border-bottom: 0px;
+    }
+  }
+  &__border-t {
+    border-top: solid 1px var(--cinza1);
+    @media (min-width: 992px) {
+      border-top: 0px;
+    }
+  }
+  &:hover {
+    color: var(--verde-claro);
   }
 }
+
 .navbar-toggler,
 .collapsed,
 .navbar {
-  height: 128px;
-  border-bottom: solid 1px var(--cinza1);
+  // height: 86px;
+  min-height: 86px;
+  // border-bottom: solid 1px var(--cinza1);
+  // background-color: var(--bg);
   button {
     border: 0;
-    height: 80px;
+    height: 77px;
   }
-  @media (max-width: 992px) {
-    height: 86px;
+  @media (min-width: 992px) {
+    // height: 128px;
+    min-height: 128px;
   }
-  background-color: var(--bg);
 }
 
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
 }
 .navbar-toggler-icon {
-  font-size: 2rem;
-  width: 3rem;
-  height: 3rem;
+  width: 35px;
+  height: 35px;
 }

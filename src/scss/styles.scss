@@ -6,14 +6,19 @@
 // @import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
 
 * {
-  /* equivalente a 10px --- 1.6rem equivalente a 16px */
-  font-size: 62.5%;
+  /* 1 rem equivalente a 10px --- 1.6rem equivalente a 16px */
+  // font-size: 62.5%;
   --verde: rgba(0, 116, 124, 1);
   --verde-claro: rgba(0, 186, 200, 1);
   --cinza1: rgba(202, 202, 202, 1);
   --cinza2: rgba(135, 135, 135, 1);
   --cinza3: rgba(31, 31, 33, 1);
   --bg: #faf5ef;
+  --item-gallery: 150px;
+}
+.btn-primary {
+  --bs-btn-bg: #00bac8;
+  --bs-btn-border-color: #00bac8;
 }
 
 body {
@@ -21,29 +26,100 @@ body {
   font-family: satoshi, sans-serif;
   /* overflow: hidden; */
   color: var(--cinza3);
-  min-width: 220px;
+  min-width: 280px;
 }
-// header {
-//   height: 124px;
-// }
 
+p {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.form-control:focus {
+  border-color: var(--verde-claro);
+  box-shadow: 0 0 0 0.25rem rgb(0 186 200 / 25%);
+}
+
+.b-radius-50 {
+  border-radius: 0 50px 0 0;
+}
+
+// testes
 .test {
-  //   background-color: aquamarine;
+  background-color: rgb(47, 58, 142);
+  height: 400px;
 }
 .test2 {
   background-color: aquamarine;
-  height: 100px;
+  height: 400px;
 }
 
+// textos
+.text-verde {
+  color: var(--verde);
+}
+.text-verde-claro {
+  color: var(--verde-claro);
+}
+.text-cinza2 {
+  color: var(--cinza2);
+}
+.text-cinza3 {
+  color: var(--cinza3);
+}
+.text-color-bg {
+  color: var(--bg);
+}
+
+// backgroud
 .bg-defaut {
   background-color: var(--bg);
 }
-
-.p-defaut {
-  padding-left: 4%;
-  padding-right: 4%;
+.bg-verde {
+  background-color: var(--verde);
 }
 
-// @import "btn_whats";
+.border-defaut {
+  &__top {
+    border-top: solid 1px var(--cinza1);
+  }
+  &__bottom {
+    border-bottom: solid 1px var(--cinza1);
+  }
+}
+
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+.my-7r {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+.mb-5r {
+  margin-bottom: 5rem;
+}
+.mt-5r {
+  margin-top: 5rem;
+}
+.py-5r {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__lg-8r {
+    @media (min-width: 992px) {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+}
+
+@import "btn_whats";
 @import "nav";
 @import "satoshi";
+@import "main";
+@import "gallery";
+@import "contact";
+@import "footer";

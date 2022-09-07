@@ -1,0 +1,11 @@
+.footer {
+  min-height: 86px;
+  button {
+    border: 0;
+    height: 77px;
+  }
+  @media (min-width: 992px) {
+    // height: 128px;
+    min-height: 128px;
+  }
+}
