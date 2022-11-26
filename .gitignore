@@ -1,5 +1,4 @@
 node_modules*
-dist*
 .DS_Store*
 package-lock.json
 *zip*
@@ -8,3 +7,4 @@ downloads
 package*
 propostas
 NOVO SITE
+.work*
